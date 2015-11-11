@@ -1,0 +1,78 @@
+section {
+  font-family: 'Doppio One', sans-serif;
+  border-bottom: 5px solid black;
+}
+section h1 {
+  font-size: 150px;
+  margin-bottom:20px;
+}
+
+#page-background-outer {
+  #page-background-inner {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid red;
+    height: 500px;
+    background: white;
+  }
+}
+
+#hero-section {
+  padding: 20px;
+  text-align: center;
+  background: lightblue url('../images/mountains5.png') no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+#overview-section {
+  background: white;
+  text-align: center;
+  padding-bottom: 20px;
+  ul {
+    padding-left:0;
+    margin-bottom: 30px;
+    li {
+      display: inline;
+      list-style-type: none;
+      font-size: 35px;
+      margin: 0 25px;
+    }
+  }
+  .technologies {
+    ul {
+      li {
+        margin: 0;
+        img {
+          margin:5px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+#experience-section {
+  background: lightskyblue;
+  text-align: center;
+  .detail-body {
+    border-top: 5px solid black;
+    background: url('../images/tile.jpg') top left repeat;
+    padding: 20px;
+    img {
+      width: 75%;
+    }
+  }
+}
+
+#about-section {
+  background: lightcoral;
+  text-align: center;
+}
+
+#contact-section {
+  background: lightgrey;
+  text-align: center;
+}
