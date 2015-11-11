@@ -5,6 +5,8 @@
     <link rel="stylesheet" type="text/css" href="app/assets/css/thirdParty.min.css">
     <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="app/assets/css/angular-bootstrap-lightbox.css" rel="stylesheet">
 </head>
 <body ng-controller="mainController">
 <section id="hero-section" ng-style="{'background-color': bgColor}"></section>
@@ -14,11 +16,35 @@
             <div class="overview-section-skills">
                 <h1>WEB</h1>
                 <ul>
-                    <li>Developer</li>
-                    <li>Designer</li>
-                    <li>Architect</li>
-                    <li>Engineer</li>
-                    <li>Programmer</li>
+                    <li>
+                        <div class="icon-div">
+                            <i class="fa fa-terminal fa-2x"></i><br>Developer
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-div">
+                            <i class="fa fa-object-ungroup fa-2x"></i><br>
+                            Designer
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-div">
+                            <i class="fa fa-sitemap fa-2x"></i><br>
+                            Architect
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-div">
+                            <i class="fa fa-cogs fa-2x"></i><br>
+                            Engineer
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-div">
+                            <i class="fa fa-code fa-2x"></i><br>
+                            Programmer
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -55,18 +81,20 @@
                 </p>
             </div>
             <div class="col-sm-6">
-                <h2>CAPITAL ONE</h2>
-                <img src="app/assets/images/mortgageHome.png">
+                <h2>Capital One</h2>
+                <a ng-click="openLightboxModal(0)">
+                    <img src="app/assets/images/mortgageHome.png">
+                </a>
             </div>
             <div class="col-sm-6">
-                <h2>PERSONAL PROJECTS</h2>
+                <h2>Side Projects</h2>
                 <img src="app/assets/images/backpackHiker.png">
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <h2>RESUME</h2>
                 <img src="app/assets/images/resume.png">
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <h2>GITHUB</h2>
                 <img src="app/assets/images/mortgage-calculator.png">
             </div>
@@ -94,6 +122,9 @@
     <!--</div>-->
 <!--</div>-->
 <script type="text/javascript" src="app/assets/js/thirdParty.min.js"></script>
+<script type="text/javascript" src="app/assets/js/angular-bootstrap-lightbox.min.js"></script>
 <script type="text/javascript" src="app/assets/js/main.min.js"></script>
+<script type="text/javascript" src="app/assets/js/ui-bootstrap-0.13.0.min.js"></script>
+<script type="text/javascript" src="app/assets/js/ui-bootstrap-tpls-0.13.0.min.js"></script>
 </body>
 </html>

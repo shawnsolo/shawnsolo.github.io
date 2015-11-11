@@ -1,0 +1,29 @@
+.lightbox-image-container {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.lightbox-image-container .left i {
+    top: 45%;
+    position: absolute;
+    color: black;
+    font-size: 4em;
+    left:10px;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.lightbox-image-container .right i {
+    top: 45%;
+    position: absolute;
+    color: black;
+    font-size: 4em;
+    right:10px;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.lightbox-image-container i:hover {
+    opacity: 1;
+}
