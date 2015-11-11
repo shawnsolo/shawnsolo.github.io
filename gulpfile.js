@@ -83,7 +83,7 @@ gulp.task('build', ['build-html', 'build-css', 'build-js']);
 gulp.task('browser-sync', function() {
     browserSync({
         server: {
-            baseDir: "app/"
+            baseDir: "./"
         }
     });
 });

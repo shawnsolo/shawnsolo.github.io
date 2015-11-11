@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="application">
 <head>
-    <link rel="stylesheet" type="text/css" href="app/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="app/assets/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="app/assets/css/thirdParty.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
 </head>
-<body>
-    <script type="text/javascript" src="app/assets/js/main.min.js"></script>
-    <div class="fake">
-        <h1>Hello There!</h1>
+<body ng-controller="mainController">
+<section id="hero-section" ng-style="{'background-color': bgColor}"></section>
+<section id="overview-section">
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="overview-section-skills">
+                <h1>WEB</h1>
+                <ul>
+                    <li>Developer</li>
+                    <li>Designer</li>
+                    <li>Architect</li>
+                    <li>Engineer</li>
+                    <li>Programmer</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="technologies">
+                <ul>
+                    <li><img src="app/assets/images/angular.png"></li>
+                    <li><img src="app/assets/images/react.png"></li>
+                    <li><img src="app/assets/images/bootstrap.png"></li>
+                    <li><img src="app/assets/images/sass.png"></li>
+                    <li><img src="app/assets/images/git.png"></li>
+                    <li><img src="app/assets/images/github.png"></li>
+                    <li><img src="app/assets/images/gulp.png"></li>
+                    <li><img src="app/assets/images/bower.png"></li>
+                    <li><img src="app/assets/images/npm.png"></li>
+                    <li><img src="app/assets/images/node.png"></li>
+                </ul>
+            </div>
+        </div>
     </div>
+</section>
+<section id="experience-section">
+    <div class="container">
+        <div class="col-sm-12">
+            <h1>EXPERIENCE</h1>
+        </div>
+    </div>
+    <div class="detail-body">
+        <div class="container">
+            <div class="col-sm-6 col-sm-offset-3">
+                <p>
+                    A description of what I want to put here for my work experience and how I am proud of myself.
+                    I want to see how far the text goes and if the container contains it appropriately.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <h2>CAPITAL ONE</h2>
+                <img src="app/assets/images/mortgageHome.png">
+            </div>
+            <div class="col-sm-6">
+                <h2>PERSONAL PROJECTS</h2>
+                <img src="app/assets/images/backpackHiker.png">
+            </div>
+            <div class="col-md-6">
+                <h2>RESUME</h2>
+                <img src="app/assets/images/resume.png">
+            </div>
+            <div class="col-md-6">
+                <h2>GITHUB</h2>
+                <img src="app/assets/images/mortgage-calculator.png">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about-section">
+    <div class="container">
+        <h1>ABOUT ME</h1>
+    </div>
+</section>
+<section id="contact-section">
+    <div class="container">
+        <h1>CONTACT</h1>
+    </div>
+</section>
+<!--<div id="page-background-outer">-->
+    <!--<div id="page-background-inner">-->
+        <!--<div class="col-sm-6">-->
+            <!--hi-->
+        <!--</div>-->
+        <!--<div class="col-sm-6">-->
+            <!--hi-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<script type="text/javascript" src="app/assets/js/thirdParty.min.js"></script>
+<script type="text/javascript" src="app/assets/js/main.min.js"></script>
 </body>
 </html>
