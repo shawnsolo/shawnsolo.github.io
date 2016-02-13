@@ -20,20 +20,63 @@
             }
         }, 10000);
 
-        $scope.images = [
+        //MODAL FUNCTIONALITY
+        $scope.capitalOne = [
             {
-                'url': 'app/assets/images/mortgageHome.png',
-                'thumbUrl': 'app/assets/images/angular.png'
+                index: 0,
+                title: 'Capital One Home Loans',
+                image: 'app/assets/images/mortgageHome.png'
             },
             {
-                'url': 'app/assets/images/mortgage-calculator.png',
-                'thumbUrl': 'app/assets/images/angular.png',
-                'caption': 'hey!'
+                index: 1,
+                title: 'Capital One Calculator',
+                image: 'app/assets/images/mortgage-calculator.png'
+            },
+            {
+                index: 2,
+                title: 'Capital One Other',
+                image: 'app/assets/images/backpackHiker.png'
             }
         ];
 
-        $scope.openLightboxModal = function (index) {
-            Lightbox.openModal($scope.images, index);
+        $scope.sideProjects = [
+            {
+                index: 0,
+                title: 'Capital One Home Loans',
+                image: 'app/assets/images/mortgage-calculator.png'
+            },
+            {
+                index: 1,
+                title: 'Capital One Calculator',
+                image: 'app/assets/images/mortgage-calculator.png'
+            },
+            {
+                index: 2,
+                title: 'Capital One Other',
+                image: 'app/assets/images/mortgage-calculator.png'
+            }
+        ];
+
+        $scope.invokeModal = function(type) {
+            $scope.gallery = $scope[type];
+            $scope.currentGallery = $scope[type][0];
+        };
+
+        $scope.goForward = function(index) {
+            if (index !== $scope.gallery.length - 1) {
+                $scope.currentGallery = $scope.gallery[index + 1];
+            }
+            else {
+                $scope.currentGallery = $scope.gallery[0];
+            }
+        };
+        $scope.goBack = function(index) {
+            if (index !== 0) {
+                $scope.currentGallery = $scope.gallery[index - 1];
+            }
+            else {
+                $scope.currentGallery = $scope.gallery[$scope.gallery.length - 1];
+            }
         };
 
     }]);

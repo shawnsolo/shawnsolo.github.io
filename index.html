@@ -12,56 +12,67 @@
 <section id="hero-section" ng-style="{'background-color': bgColor}"></section>
 <section id="overview-section">
     <div class="container">
-        <div class="col-sm-12">
-            <div class="overview-section-skills">
-                <h1>WEB</h1>
-                <ul>
-                    <li>
-                        <div class="icon-div">
-                            <i class="fa fa-terminal fa-2x"></i><br>Developer
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon-div">
-                            <i class="fa fa-object-ungroup fa-2x"></i><br>
-                            Designer
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon-div">
-                            <i class="fa fa-sitemap fa-2x"></i><br>
-                            Architect
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon-div">
-                            <i class="fa fa-cogs fa-2x"></i><br>
-                            Engineer
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon-div">
-                            <i class="fa fa-code fa-2x"></i><br>
-                            Programmer
-                        </div>
-                    </li>
-                </ul>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="overview-section-skills">
+                    <h1>WEB</h1>
+                    <div class="col-sm-3 col-xs-6 icon-div">
+                        <i class="fa fa-code fa-5x"></i>
+                        <p>Developer</p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 icon-div">
+                        <i class="fa fa-object-ungroup fa-5x"></i>
+                        <p>Designer</p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 icon-div">
+                        <i class="fa fa-sitemap fa-5x"></i>
+                        <p>Architect</p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 icon-div">
+                        <i class="fa fa-cogs fa-5x"></i>
+                        <p>Engineer</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-sm-12">
-            <div class="technologies">
-                <ul>
-                    <li><img src="app/assets/images/angular.png"></li>
-                    <li><img src="app/assets/images/react.png"></li>
-                    <li><img src="app/assets/images/bootstrap.png"></li>
-                    <li><img src="app/assets/images/sass.png"></li>
-                    <li><img src="app/assets/images/git.png"></li>
-                    <li><img src="app/assets/images/github.png"></li>
-                    <li><img src="app/assets/images/gulp.png"></li>
-                    <li><img src="app/assets/images/bower.png"></li>
-                    <li><img src="app/assets/images/npm.png"></li>
-                    <li><img src="app/assets/images/node.png"></li>
-                </ul>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="technologies">
+                    <ul>
+                        <li><img src="app/assets/images/angular.png"></li>
+                        <li><img src="app/assets/images/mongo.png"></li>
+                        <li><img src="app/assets/images/react.png"></li>
+                        <li><img src="app/assets/images/git.png"></li>
+                        <li><img src="app/assets/images/yo.png"></li>
+                        <li><img src="app/assets/images/bootstrap.png"></li>
+                        <li><img src="app/assets/images/npm.png"></li>
+                        <li><img src="app/assets/images/sass.png"></li>
+                        <li><img src="app/assets/images/github.png"></li>
+                        <li><img src="app/assets/images/node.png"></li>
+                        <li><img src="app/assets/images/jasmine.png"></li>
+                        <li><img src="app/assets/images/bower.png"></li>
+                        <li><img src="app/assets/images/gulp.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about-section">
+    <div class="container">
+        <h1>ABOUT ME</h1>
+    </div>
+    <div class="detail-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <p>
+                        A description of me and who I am
+                    </p>
+                </div>
+                <div class="col-sm-12 code-example">
+                    <img src="app/assets/images/code.png">
+                </div>
             </div>
         </div>
     </div>
@@ -82,13 +93,15 @@
             </div>
             <div class="col-sm-6">
                 <h2>Capital One</h2>
-                <a ng-click="openLightboxModal(0)">
+                <a data-toggle="modal" data-target="#experienceModal" ng-click="invokeModal('capitalOne')">
                     <img src="app/assets/images/mortgageHome.png">
                 </a>
             </div>
             <div class="col-sm-6">
                 <h2>Side Projects</h2>
-                <img src="app/assets/images/backpackHiker.png">
+                <a data-toggle="modal" data-target="#experienceModal" ng-click="invokeModal('sideProjects')">
+                    <img src="app/assets/images/backpackHiker.png">
+                </a>
             </div>
             <div class="col-sm-6">
                 <h2>RESUME</h2>
@@ -101,26 +114,33 @@
         </div>
     </div>
 </section>
-<section id="about-section">
-    <div class="container">
-        <h1>ABOUT ME</h1>
-    </div>
-</section>
 <section id="contact-section">
     <div class="container">
         <h1>CONTACT</h1>
     </div>
 </section>
-<!--<div id="page-background-outer">-->
-    <!--<div id="page-background-inner">-->
-        <!--<div class="col-sm-6">-->
-            <!--hi-->
-        <!--</div>-->
-        <!--<div class="col-sm-6">-->
-            <!--hi-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+
+<!-- Modal -->
+<div class="modal fade" id="experienceModal" tabindex="-1" role="dialog" aria-labelledby="experienceModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">{{currentGallery.title}}</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Description of this particular piece of work
+                </p>
+                <img src="{{currentGallery.image}}">
+                <div class="nav">
+                    <i class="fa fa-arrow-circle-o-left fa-3x" ng-click="goBack(currentGallery.index)"></i>
+                    <i class="fa fa-arrow-circle-o-right fa-3x" ng-click="goForward(currentGallery.index)"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script type="text/javascript" src="app/assets/js/thirdParty.min.js"></script>
 <script type="text/javascript" src="app/assets/js/angular-bootstrap-lightbox.min.js"></script>
 <script type="text/javascript" src="app/assets/js/main.min.js"></script>
