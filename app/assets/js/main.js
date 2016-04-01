@@ -25,7 +25,8 @@
             {
                 index: 0,
                 title: 'Capital One Home Loans',
-                image: 'app/assets/images/mortgageHome.png'
+                image: 'app/assets/images/mortgageHome.png',
+                url: 'https://www.capitalone.com/home-loans'
             },
             {
                 index: 1,

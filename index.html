@@ -39,19 +39,19 @@
             <div class="col-sm-12">
                 <div class="technologies">
                     <ul>
-                        <li><img src="app/assets/images/angular.png"></li>
-                        <li><img src="app/assets/images/mongo.png"></li>
-                        <li><img src="app/assets/images/react.png"></li>
-                        <li><img src="app/assets/images/git.png"></li>
-                        <li><img src="app/assets/images/yo.png"></li>
-                        <li><img src="app/assets/images/bootstrap.png"></li>
-                        <li><img src="app/assets/images/npm.png"></li>
-                        <li><img src="app/assets/images/sass.png"></li>
-                        <li><img src="app/assets/images/github.png"></li>
-                        <li><img src="app/assets/images/node.png"></li>
-                        <li><img src="app/assets/images/jasmine.png"></li>
-                        <li><img src="app/assets/images/bower.png"></li>
-                        <li><img src="app/assets/images/gulp.png"></li>
+                        <li><img ng-src="app/assets/images/angular.png"></li>
+                        <li><img ng-src="app/assets/images/mongo.png"></li>
+                        <li><img ng-src="app/assets/images/react.png"></li>
+                        <li><img ng-src="app/assets/images/git.png"></li>
+                        <li><img ng-src="app/assets/images/yo.png"></li>
+                        <li><img ng-src="app/assets/images/bootstrap.png"></li>
+                        <li><img ng-src="app/assets/images/ruby.png"></li>
+                        <li><img ng-src="app/assets/images/npm.png"></li>
+                        <li><img ng-src="app/assets/images/sass.png"></li>
+                        <li><img ng-src="app/assets/images/github.png"></li>
+                        <li><img ng-src="app/assets/images/node.png"></li>
+                        <li><img ng-src="app/assets/images/bower.png"></li>
+                        <li><img ng-src="app/assets/images/gulp.png"></li>
                     </ul>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                     </p>
                 </div>
                 <div class="col-sm-12 code-example">
-                    <img src="app/assets/images/code.png">
+                    <img ng-src="app/assets/images/code.png">
                 </div>
             </div>
         </div>
@@ -94,22 +94,22 @@
             <div class="col-sm-6">
                 <h2>Capital One</h2>
                 <a data-toggle="modal" data-target="#experienceModal" ng-click="invokeModal('capitalOne')">
-                    <img src="app/assets/images/mortgageHome.png">
+                    <img ng-src="app/assets/images/mortgageHome.png">
                 </a>
             </div>
             <div class="col-sm-6">
                 <h2>Side Projects</h2>
                 <a data-toggle="modal" data-target="#experienceModal" ng-click="invokeModal('sideProjects')">
-                    <img src="app/assets/images/backpackHiker.png">
+                    <img ng-src="app/assets/images/backpackHiker.png">
                 </a>
             </div>
             <div class="col-sm-6">
                 <h2>RESUME</h2>
-                <img src="app/assets/images/resume.png">
+                <img ng-src="app/assets/images/resume.png">
             </div>
             <div class="col-sm-6">
                 <h2>GITHUB</h2>
-                <img src="app/assets/images/mortgage-calculator.png">
+                <img ng-src="app/assets/images/mortgage-calculator.png">
             </div>
         </div>
     </div>
@@ -121,7 +121,7 @@
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="experienceModal" tabindex="-1" role="dialog" aria-labelledby="experienceModal">
+<div class="modal fade" id="experienceModal" tabindex="-1" role="dialog" aria-labelledby="experienceModal" ng-if="currentGallery">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -132,7 +132,7 @@
                 <p>
                     Description of this particular piece of work
                 </p>
-                <img src="{{currentGallery.image}}">
+                <img ng-src="{{currentGallery.image}}">
                 <div class="nav">
                     <i class="fa fa-arrow-circle-o-left fa-3x" ng-click="goBack(currentGallery.index)"></i>
                     <i class="fa fa-arrow-circle-o-right fa-3x" ng-click="goForward(currentGallery.index)"></i>
