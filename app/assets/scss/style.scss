@@ -4,9 +4,9 @@ section {
 }
 section {
   h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom:20px;
-    @media (min-width: 1200px) {
+    @media (min-width: 60em) {
       font-size: 150px;
     }
   }
