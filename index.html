@@ -9,7 +9,9 @@
     <link href="app/assets/css/angular-bootstrap-lightbox.css" rel="stylesheet">
 </head>
 <body ng-controller="mainController">
-<section id="hero-section" ng-style="{'background-color': bgColor}"></section>
+<section id="hero-section" ng-style="{'background-color': bgColor}">
+  <div class="img-container"><img ng-src="app/assets/images/aboutShawn.png"></div>
+</section>
 <section id="overview-section">
     <div class="container">
         <div class="row">
@@ -41,10 +43,10 @@
                     <ul>
                         <li><img ng-src="app/assets/images/angular.png"></li>
                         <li><img ng-src="app/assets/images/mongo.png"></li>
-                        <li><img ng-src="app/assets/images/react.png"></li>
+                        <!-- <li><img ng-src="app/assets/images/react.png"></li> -->
                         <li><img ng-src="app/assets/images/git.png"></li>
                         <li><img ng-src="app/assets/images/yo.png"></li>
-                        <li><img ng-src="app/assets/images/bootstrap.png"></li>
+                        <!-- <li><img ng-src="app/assets/images/bootstrap.png"></li> -->
                         <li><img ng-src="app/assets/images/ruby.png"></li>
                         <li><img ng-src="app/assets/images/npm.png"></li>
                         <li><img ng-src="app/assets/images/sass.png"></li>
@@ -64,15 +66,35 @@
     </div>
     <div class="detail-about">
         <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Bio</h2>
+              <p>
+                Hi - My name is Shawn. I am a full-stack web developer with an addiction to clean,
+                modular code. While javascript is generally my mainstay, I have dabbled across
+                many popular web application frameworks for both work and just for fun. I love
+                keeping up with the evolving tech world and am constantly learning and
+                implementing new technologies, frameworks, and features in my projects.
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <h2>Skillz</h2>
+              <div>
+                <ul>
+                  <li>Javascript is My Middle Name</li>
+                  <li>Agile / Scrum Methodology</li>
+                  <li>Front-End Focused; Full-Stack Capability</li>
+                  <li>Reusable Web Components</li>
+                  <li>Project Management / Leadership</li>
+                  <li>Passion for Learning & Growth</li>
+                </ul>
+              </div>
+            </div>
+          </div>
             <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <p>
-                        A description of me and who I am
-                    </p>
-                </div>
-                <div class="col-sm-12 code-example">
-                    <img ng-src="app/assets/images/code.png">
-                </div>
+              <div class="col-sm-12 code-example">
+                  <img ng-src="app/assets/images/code.png">
+              </div>
             </div>
         </div>
     </div>

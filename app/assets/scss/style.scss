@@ -2,11 +2,16 @@ section {
   font-family: 'Doppio One', sans-serif;
   border-bottom: 5px solid black;
 }
-section h1 {
-  font-size: 60px;
-  margin-bottom:20px;
-  @media (min-width: 1200px) {
-    font-size: 150px;
+section {
+  h1 {
+    font-size: 60px;
+    margin-bottom:20px;
+    @media (min-width: 1200px) {
+      font-size: 150px;
+    }
+  }
+  h2 {
+    font-size: 40px;
   }
 }
 
@@ -27,7 +32,20 @@ section h1 {
   text-align: center;
   background: lightblue url('../images/mountains5.png') no-repeat;
   background-size: cover;
+  background-position: center top;
   height: 400px;
+  .img-container {
+    margin-top: 30px;
+    width: 300px;
+    height: 290px;
+    display: inline-block;
+    background: rgba(210,210,210,0.9);
+    border-radius: 50%;
+    img {
+      width: 100%;
+      margin-top: -3px;
+    }
+  }
 }
 
 #overview-section {
@@ -68,15 +86,6 @@ section h1 {
       }
     }
   }
-  .code-example {
-    img {
-      display: none;
-      @media (min-width: 768px) {
-        display: block;
-        width: 100%;
-      }
-    }
-  }
 }
 
 #experience-section {
@@ -97,11 +106,26 @@ section h1 {
   background: lightcoral;
   text-align: center;
   .detail-about {
+    font-size: 1.2em;
     border-top: 5px solid black;
     background: white;
     padding: 20px;
-    img {
-      width: 100%;
+    .code-example {
+      img {
+        display: none;
+        @media (min-width: 768px) {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+    p {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
     }
   }
 }
