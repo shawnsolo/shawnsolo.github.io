@@ -1,7 +1,7 @@
 (function(){
-    var app = angular.module('application', ['ui.bootstrap', 'bootstrapLightbox']);
+    var app = angular.module('application', ['ui.bootstrap']);
 
-    app.controller('mainController', ['$scope', '$interval', 'Lightbox', function($scope, $interval, Lightbox) {
+    app.controller('mainController', ['$scope', '$interval', function($scope, $interval) {
         $scope.image1 = 'assets/images/blueLake.JPG';
         var bgColors = ['lightcoral','lightgoldenrodyellow','lightgreen', 'lightgrey', 'lightpink', 'lightsalmon',
         'lightseagreen', 'lightskyblue'];
