@@ -6,8 +6,8 @@ section {
   h1 {
     font-size: 50px;
     margin-bottom:20px;
-    @media (min-width: 60em) {
-      font-size: 150px;
+    @media (min-width: 960px) {
+      font-size: 130px;
     }
   }
   h2 {
@@ -54,7 +54,7 @@ section {
   padding-bottom: 30px;
   p {
     font-size: 2em;
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
       font-size: 3em;
     }
   }
@@ -69,7 +69,7 @@ section {
       .icon-div {
         display: inline-block;
         margin-bottom: 50px;
-        @media (min-width: 1200px) {
+        @media (min-width: 960px) {
           margin-bottom: 10px;
         }
       }
@@ -89,15 +89,48 @@ section {
 }
 
 #experience-section {
-  background: lightskyblue;
+  h1 {
+    text-align: center;
+  }
   text-align: center;
+  background: lightskyblue;
+  a {
+    text-decoration: none;
+  }
   .detail-body {
+    // text-align: left;
     border-top: 5px solid black;
     background: white;
     padding: 20px;
+    .row {
+      @media (min-width: 960px) {
+        margin-top: 30px;
+      }
+    }
+    p {
+      text-align: left;
+      margin-top: 10px;
+    }
     img {
       width: 75%;
       cursor: pointer;
+    }
+  }
+  .exp-item {
+    font-size: 3em;
+    cursor: pointer;
+    .sub-item {
+      text-align: center;
+      img {
+        width: 15%;
+        margin-top: -15px;
+      }
+      span {
+        font-size: .8em;
+      }
+    }
+    @media (min-width: 960px) {
+      font-size: 5em;
     }
   }
 }
@@ -137,7 +170,7 @@ section {
 
 //BOOTSTRAP MODS
 .modal-dialog {
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     width: 800px !important;
   }
 }

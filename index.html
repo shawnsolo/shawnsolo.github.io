@@ -73,15 +73,15 @@
             <div class="col-sm-6">
               <h2>Bio</h2>
               <p>
-                Hi - My name is Shawn. I am a full-stack web developer with an addiction to clean,
+                Hi - My name is Shawn. I am a full-stack web developer with a healthy addiction to clean,
                 modular code. While javascript is generally my mainstay, I have dabbled across
-                many popular web application frameworks for both work and just for fun. I love
+                many web application technologies and frameworks in both work and leisure. I enjoy
                 keeping up with the evolving tech world and am constantly learning and
                 implementing new technologies, frameworks, and features in my projects.
               </p>
             </div>
             <div class="col-sm-6">
-              <h2>Skillz</h2>
+              <h2>Attributes</h2>
               <div>
                 <ul>
                   <li>Javascript is My Middle Name</li>
@@ -89,7 +89,7 @@
                   <li>Front-End Focused; Full-Stack Capability</li>
                   <li>Reusable Web Components</li>
                   <li>Project Management / Leadership</li>
-                  <li>Passion for Learning & Growth</li>
+                  <li>Lifelong Student</li>
                 </ul>
               </div>
             </div>
@@ -110,32 +110,53 @@
     </div>
     <div class="detail-body">
         <div class="container">
-            <div class="col-sm-6 col-sm-offset-3">
-                <p>
-                    A description of what I want to put here for my work experience and how I am proud of myself.
-                    I want to see how far the text goes and if the container contains it appropriately.
-                </p>
+          <div class="row">
+            <div class="col-sm-6">
+              <a data-toggle="modal" data-target="#experienceModal" ng-click="invokeModal('capitalOne')">
+                  <img ng-src="app/assets/images/capitalone.png">
+              </a>
             </div>
             <div class="col-sm-6">
-                <h2>Capital One</h2>
-                <a data-toggle="modal" data-target="#experienceModal" ng-click="invokeModal('capitalOne')">
-                    <img ng-src="app/assets/images/mortgageHome.png">
-                </a>
+              <p>
+                  I have been working at Caital One for 4 years and am currently the lead front-end
+                  engineer for Mortgage, Refinance, & Home Equity. Our application was built around on-the-fly
+                  customization and editing capabilities. This enables business owners to update content rapidly
+                  and further enhance the user experience.
+              </p>
             </div>
+          </div>
+          <div class="row">
             <div class="col-sm-6">
-                <h2>Side Projects</h2>
                 <a data-toggle="modal" data-target="#experienceModal" ng-click="invokeModal('sideProjects')">
-                    <img ng-src="app/assets/images/backpackHiker.png">
+                    <div class="exp-item">ON THE SIDE</div>
                 </a>
             </div>
             <div class="col-sm-6">
-                <h2>RESUME</h2>
-                <img ng-src="app/assets/images/resume.png">
+              <p>
+                In addition to my 9-5, I am always experimenting with budding technologies, new frameworks,
+                and whatever ideas come to mind (both good and bad). Along with hosting this site, I utilize
+                github to house these projects.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="exp-item">
+                <div class="sub-item">
+                  <span><img ng-src="app/assets/images/github.png"></span>
+                  <span>GITHUB</span>
+                </div>
+              </div>
             </div>
             <div class="col-sm-6">
-                <h2>GITHUB</h2>
-                <img ng-src="app/assets/images/mortgage-calculator.png">
+              <div class="exp-item">
+                <div class="sub-item">
+                  <span><img ng-src="app/assets/images/resume.jpg"></span>
+                  <span>RESUME</span>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
     </div>
 </section>
