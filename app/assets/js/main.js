@@ -25,36 +25,49 @@
             {
                 index: 0,
                 title: 'Capital One Home Loans',
-                image: 'app/assets/images/mortgageHome.png',
-                url: 'https://www.capitalone.com/home-loans'
+                image: 'app/assets/images/c1Widget.png',
+                url: 'https://www.capitalone.com/home-loans/mortgage'
             },
             {
                 index: 1,
-                title: 'Capital One Calculator',
-                image: 'app/assets/images/mortgage-calculator.png'
+                title: 'Capital One Mortgage Calculator',
+                image: 'app/assets/images/c1Calc.png',
+                url: 'https://www.capitalone.com/home-loans/mortgage/calculator'
             },
             {
                 index: 2,
-                title: 'Capital One Other',
-                image: 'app/assets/images/backpackHiker.png'
+                title: 'Capital One Rates',
+                image: 'app/assets/images/c1Rates.png',
+                url: 'https://www.capitalone.com/home-loans/mortgage/rates'
+            },
+            {
+                index: 3,
+                title: 'Capital One Custom Rate',
+                image: 'app/assets/images/c1Crq.png',
+                url: 'https://www.capitalone.com/home-equity/calculator/rates'
             }
         ];
 
         $scope.sideProjects = [
             {
                 index: 0,
-                title: 'Capital One Home Loans',
-                image: 'app/assets/images/mortgage-calculator.png'
+                title: 'Backpack Hiker Home Page',
+                image: 'app/assets/images/backpack1.png'
             },
             {
                 index: 1,
-                title: 'Capital One Calculator',
-                image: 'app/assets/images/mortgage-calculator.png'
+                title: 'Backpack Hiker Search',
+                image: 'app/assets/images/backpack2.png'
             },
             {
                 index: 2,
-                title: 'Capital One Other',
-                image: 'app/assets/images/mortgage-calculator.png'
+                title: 'JS Express Application',
+                image: 'app/assets/images/express.png'
+            },
+            {
+                index: 3,
+                title: 'Pinquistion Start Up Portal',
+                image: 'app/assets/images/pinquisition.png'
             }
         ];
 

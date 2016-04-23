@@ -44,10 +44,9 @@
                     <ul>
                         <li><img ng-src="app/assets/images/angular.png"></li>
                         <li><img ng-src="app/assets/images/mongo.png"></li>
-                        <!-- <li><img ng-src="app/assets/images/react.png"></li> -->
+                        <li><img ng-src="app/assets/images/react.png"></li>
                         <li><img ng-src="app/assets/images/git.png"></li>
                         <li><img ng-src="app/assets/images/yo.png"></li>
-                        <!-- <li><img ng-src="app/assets/images/bootstrap.png"></li> -->
                         <li><img ng-src="app/assets/images/ruby.png"></li>
                         <li><img ng-src="app/assets/images/npm.png"></li>
                         <li><img ng-src="app/assets/images/sass.png"></li>
@@ -126,14 +125,13 @@
           <div class="row">
             <div class="col-sm-6">
                 <a data-toggle="modal" data-target="#experienceModal" ng-click="invokeModal('sideProjects')">
-                    <div class="exp-item">ON THE SIDE</div>
+                    <span class="exp-item">ON THE SIDE</span>
                 </a>
             </div>
             <div class="col-sm-6">
               <p>
                 In addition to my 9-5, I am always experimenting with budding technologies, new frameworks,
-                and whatever ideas come to mind (both good and bad). Along with hosting this site, I utilize
-                github to house these projects.
+                and whatever ideas come to mind (both good and bad).
               </p>
             </div>
           </div>
@@ -141,16 +139,20 @@
             <div class="col-sm-6">
               <div class="exp-item">
                 <div class="sub-item">
-                  <span><img ng-src="app/assets/images/github.png"></span>
-                  <span>GITHUB</span>
+                  <a href="https://github.com/shawnsolo" target="_blank">
+                    <span><img ng-src="app/assets/images/github.png"></span>
+                    <span>GITHUB</span>
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="exp-item">
                 <div class="sub-item">
-                  <span><img ng-src="app/assets/images/resume.jpg"></span>
-                  <span>RESUME</span>
+                  <a href="app/assets/images/resume.pdf" target="_blank">
+                    <span><img ng-src="app/assets/images/resume.jpg"></span>
+                    <span>RESUME</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -160,26 +162,44 @@
 </section>
 <section id="contact-section">
     <div class="container">
+      <div class="col-sm-12">
         <h1>CONTACT</h1>
+      </div>
     </div>
+    <div class="contact-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <form action="https://formspree.io/schlosser.shawn@gmail.com" method="POST">
+              <fieldset class="form-group">
+                <label for="message">Let's chat - shoot me a message!</label>
+                <textarea class="form-control" name="message" id="message" rows="4"></textarea>
+              </fieldset>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section id="footer-section">
+  &copy; 2016 - Shawn Schlosser
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="experienceModal" tabindex="-1" role="dialog" aria-labelledby="experienceModal" ng-if="currentGallery">
+<div class="modal fade" id="experienceModal" tabindex="-1" role="dialog" aria-labelledby="experienceModal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">{{currentGallery.title}}</h4>
+                <small><a href="{{currentGallery.url}}" target="new">{{currentGallery.url}}</a></small>
             </div>
             <div class="modal-body">
-                <p>
-                    Description of this particular piece of work
-                </p>
                 <img ng-src="{{currentGallery.image}}">
                 <div class="nav">
-                    <i class="fa fa-arrow-circle-o-left fa-3x" ng-click="goBack(currentGallery.index)"></i>
-                    <i class="fa fa-arrow-circle-o-right fa-3x" ng-click="goForward(currentGallery.index)"></i>
+                    <i class="fa fa-arrow-circle-o-left fa-3x" ng-click="goBack(currentGallery.index);$event.stopPropagation();"></i>
+                    <i class="fa fa-arrow-circle-o-right fa-3x" ng-click="goForward(currentGallery.index);$event.stopPropagation();"></i>
                 </div>
             </div>
         </div>

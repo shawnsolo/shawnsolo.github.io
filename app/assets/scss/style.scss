@@ -96,7 +96,10 @@ section {
   background: lightskyblue;
   a {
     text-decoration: none;
+    cursor: pointer;
+    color: black;
   }
+
   .detail-body {
     // text-align: left;
     border-top: 5px solid black;
@@ -109,7 +112,7 @@ section {
     }
     p {
       text-align: left;
-      margin-top: 10px;
+      margin-top: 20px;
     }
     img {
       width: 75%;
@@ -118,7 +121,6 @@ section {
   }
   .exp-item {
     font-size: 3em;
-    cursor: pointer;
     .sub-item {
       text-align: center;
       img {
@@ -166,6 +168,26 @@ section {
 #contact-section {
   background: lightgrey;
   text-align: center;
+  .contact-form {
+    background: white;
+    border-top: 5px solid black;
+    form {
+      margin: 30px 0;
+      label {
+        float: left;
+      }
+      textarea {
+          resize: none;
+      }
+    }
+  }
+}
+
+#footer-section {
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: none;
+  background: lightsalmon;
 }
 
 //BOOTSTRAP MODS
@@ -185,7 +207,4 @@ section {
       cursor: pointer;
     }
   }
-}
-.modal-footer {
-
 }
